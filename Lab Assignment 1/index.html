@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Homepage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+        box-sizing: border-box;
+    
+    }
+    
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 50%;
+  height: 500px; /* only for demonstration, should be removed */
+
+}
+
+
+article {
+  float: right;
+  width: 50%;
+  height: 500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+    
+}
+    
+    
+.topnav {
+  overflow: hidden;
+  background-color: #2f3a4a;
+  line-height: 40px;
+}
+ 
+.topnav a {
+  float: left;
+  display: block;
+  width:150px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color:#fff;
+}
+    
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+    .tengah {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+    
+    /* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+
+.dalam {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: lightgray;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+    overflow: hidden;
+  padding: 1px;
+  text-align: center;
+  background: #2f3a4a;
+  margin-top: 150px;
+}
+   
+    
+    
+    body {
+        background-image: url('image/bg1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: 100% 100%;
+        }
+
+ 
+
+</style>
+</head>
+<body>
+
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="photo_Gallery.html">Photo Gallery</a>
+            <a href="about_Us.html">About Us</a>
+        </div>
+
+    <h1 style="color:DodgerBlue;" class="tengah">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             Welcome to My Profile Page</h1>
+    <p><img height=350 src="image/teri.jpg" class="center">
+    </p>
+    
+<section>
+  <nav>
+      <div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <div class="dalam" style="height:250px;">
+        <ul style="list-style-type:none;">
+      <li><h1 style="font-size:150%;">Profile Info</h1></li>
+            <li>Muhammad Fikri Aminuddin Bin Fauzi</li>
+            <li>(2021120383)</li>
+      <br><li>Home Address: W2/90 Kampung Dangar, 17000 Pasir Mas, Kelantan</li>
+        <br><li>Phone number: 0112303031</li>
+        <br><li>Email: teri@gmail.com</li>
+       
+    </ul>
+        
+        </div>
+    </div>
+      
+    <div class="card">
+      <div class="dalam" style="height:250px;">
+        <ol>
+            <h1 style="font-size:150%;">Working Experience</h1>
+            <li>SYMPHONET SDN. BHD</li>
+              <p> As Intern Student for 2 months.</p>
+            <li>GAJET ZARA KELATE</li>
+          <p> As Runner for COD. </p>
+      </ol> 
+        </div>
+    </div>
+  </div>
+  </div>
+      
+      
+  </nav>
+    
+  
+  <article>
+      
+      
+      <div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <div class="dalam" style="height:400px;">
+        
+        <ul style="list-style-type:none;">
+    <h1 style="font-size:150%;">Academic info</h1>
+        <li><strong><t>Universiti Teknologi Mara (UITM)</t></strong></li>
+        <br><li>Degree(UiTM Chendering):
+        <ul>
+            <li>Bachelor of Computer Science(HONS.)(CS230)</li>
+            <li>Enrolled since March. 2021 to present</li>
+        </ul>
+        </li>
+    <br><li>Diploma(UiTM Machang):
+        <ul>
+            <li>Diploma in Computer Science(CS110)</li>
+            <li>Enrolled since Sept. 2018 to Jan. 2021</li>
+        </ul>
+        </li>
+    <br><strong><t>Secondary School: SMK Sultan Ibrahim (1)</t></strong>
+        <ul>
+            <br><li>Sijil Pelajaran Malaysia (SPM), 2017</li>
+            <li>Results: 4A 1A- 2B+ 1B 1C+</li>
+        </ul>
+           </ul>
+        
+        </div>
+    </div>
+  </div>
+  </div>
+ 
+  </article>
+</section>
+
+    <div class="footer">
+  <h2 style="color:White">M.Fikri&reg;</h2>
+</div>
+    
+    
+</body>
+</html>
+
