@@ -22,30 +22,29 @@
 
   
   <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-    <a href="Portfolio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="PhotoGallery.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PHOTO GALLERY</a>
-    <a href="timetable.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> TIMETABLE</a>
-    <a href="feedback.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> FEEDBACK</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      
-    </a>
-      
-</div>
-    
-    <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="Portfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> PORTFOLIO</a>
-      <a href="PhotoGallery.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> PHOTO GALLERY</a>
-    <a href="timetable.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> TIMETABLE</a>
-    <a href="feedback.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> FEEDBACK</a>
-  </div>
-</div>
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbarscroll">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="Portfolio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="PhotoGallery.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PHOTO GALLERY</a>
+            <a href="timetable.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> TIMETABLE</a>
+            <a href="feedback.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> FEEDBACK</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="Portfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> PORTFOLIO</a>
+            <a href="PhotoGallery.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> PHOTO GALLERY</a>
+            <a href="timetable.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> TIMETABLE</a>
+            <a href="feedback.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> FEEDBACK</a>
+        </div>
+    </div>
     <script src="navbar.js"></script>
     
 
@@ -112,6 +111,17 @@ function myFunction() {
   } else { 
     x.className = x.className.replace("w3-row-padding", "w3-row");
   }
+}
+    
+    // Change style of navbar on scroll
+window.onscroll = function() {myFunctionscroll()};
+function myFunctionscroll() {
+    var navbar = document.getElementById("myNavbarscroll");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
 }
     
 // Open and close sidebar
