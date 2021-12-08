@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Index</title>
+    <title>----Index of My Website "Fikriaminuddin.github.io----"</title>
 </head>
 
 <body>
