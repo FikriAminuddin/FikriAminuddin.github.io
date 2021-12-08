@@ -17,6 +17,17 @@ video.center {
   margin-right: auto;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+ 
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  text-align: center;
+}
+
     
     /* Create two unequal columns that floats next to each other */
 /* Left column */
