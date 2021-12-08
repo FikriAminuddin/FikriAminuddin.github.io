@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Feedback FORM</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="feedback.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="image/feedbackicon.jpg" type="image/jpg">
+</head>
+<body>
+
+
+    <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="Portfolio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="PhotoGallery.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PHOTO GALLERY</a>
+    <a href="timetable.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> TIMETABLE</a>
+    <a href="feedback.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> FEEDBACK</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      
+    </a>
+</div>
+    
+    <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="Portfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="PhotoGallery.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> PHOTO GALLERY</a>
+    <a href="timetable.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> TIMETABLE</a>
+    <a href="feedback.html" class="w3-bar-item w3-button" onclick="toggleFunction()">FEEDBACK</a>
+  </div>
+</div>
+    
+<div class="body">
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Pasir Mas</div>
+          <div class="text-two">Kelantan</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+6012-345678</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">fikriaminuddin64@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any enqueries related to my website, you are pleased to send the message from here. It's my pleasure to help you.</p>
+      <form>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email" required>
+        </div>
+        <div class="input-box message-box">
+          <input type="textarea" placeholder="Enter your message" required>
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  </div>
+    
+    
+    <script>
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+    
+</body>    
+</html>    

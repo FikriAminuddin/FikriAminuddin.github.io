@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="PhotoGallery.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="image/Photogalleryicon.png" type="image/png">
+        
+        <title>PhotoGallery | Fikri</title>
+    </head>
+    
+    <style>
+    img {margin-bottom: -7px}
+    .w3-row-padding img {margin-bottom: 12px}
+    </style>
+    
+<body>
+    
+
+  
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="Portfolio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="PhotoGallery.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PHOTO GALLERY</a>
+    <a href="timetable.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> TIMETABLE</a>
+    <a href="feedback.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> FEEDBACK</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      
+    </a>
+      
+</div>
+    
+    <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="Portfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> PORTFOLIO</a>
+      <a href="PhotoGallery.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> PHOTO GALLERY</a>
+    <a href="timetable.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> TIMETABLE</a>
+    <a href="feedback.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> FEEDBACK</a>
+  </div>
+</div>
+    <script src="navbar.js"></script>
+    
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <br><br><h1><b>PHOTO GALLERY</b></h1>
+    <h3><b>M.Fikri</b></h3>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="image/kawan.jpg" style="width:100%" class = "w3-animate-opacity">
+    <img src="image/pantai.jpg" style="width:100%" class = "w3-animate-opacity">
+    <img src="image/kawandipantai.jpg" style="width:100%" class = "w3-animate-opacity">
+    <img src="image/hiking.jpg" style="width:100%" class = "w3-animate-opacity">
+    <img src="image/latakolam.jpg" style="width:100%" class = "w3-animate-opacity">
+  </div>
+
+  <div class="w3-third">
+    <img src="image/nature.jpg" style="width:100%" class = "w3-animate-opacity">
+    <img src="image/bungaraya.jpg" style="width:100%" class = "w3-animate-opacity">
+    <img src="image/PokokNyiur.jpg" style="width:100%" class = "w3-animate-opacity">
+    <img src="image/pantaibisikanbayu.jpg" style="width:100%" class = "w3-animate-opacity">
+  </div>
+
+  <div class="w3-third">
+    <img src="image/workbench.jpg" style="width:100%" class = "w3-animate-opacity">
+    <img src="image/bangunan.PNG" style="width:100%" class = "w3-animate-opacity">
+    <img src="image/skies.jpg" style="width:100%">
+    <img src="image/photographybyfikri.jpeg" style="width:100%" class = "w3-animate-opacity">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-gray w3-opacity w3-hover-opacity-off">
+  <p>Find me on social media.</p>
+    <div class="w3-xlarge w3-section">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+        </div>
+  <p> </p>
+</footer>
+ 
+    <!-- Javascript -->
+<script>
+    
+    // Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+    
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+      
+</script>
+
+
+</body>
+</html>
